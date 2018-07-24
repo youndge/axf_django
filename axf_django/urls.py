@@ -19,5 +19,5 @@ from django.conf.urls import include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('^', include('axf.urls', namespace = 'axf'))
+    path('axf', include('axf_app.urls'))
 ]
